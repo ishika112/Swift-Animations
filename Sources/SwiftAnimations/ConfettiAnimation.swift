@@ -10,31 +10,31 @@ import UIKit
 public class ConfettiAnimation: CAEmitterLayer {
     
     // configurable public properties with default values
-    var emptyView = UIView()
-    var confettiColorsArray: [UIColor] = [
+    public var emptyView = UIView()
+    public var confettiColorsArray: [UIColor] = [
                     (r:199,g:1,b:1),(r:199,g:1,b:1), (r:239,g:2,b:30), (r:248,g:231,b:28),(r:199,g:1,b:1),(r:199,g:1,b:1),(r:188, g:157, b:76),(r:255, g:255, b:255),(r:248,g:231,b:28)
                     ].map { UIColor(red: $0.r / 255.0, green: $0.g / 255.0, blue: $0.b / 255.0, alpha: 1) }
     
-    var confettiBurstRadius = 50.0
-    var birthAnimationDuration = 1.0
-    var initialForce = 700.0
-    var initialEmitterPosition = CGPoint(x: 0, y: 0)
-    var birthRateOfConfettiParticles: CGFloat = 1.0
+    public var confettiBurstRadius = 50.0
+    public var birthAnimationDuration = 1.0
+    public var initialForce = 700.0
+    public var initialEmitterPosition = CGPoint(x: 0, y: 0)
+    public var birthRateOfConfettiParticles: CGFloat = 1.0
     
-    var rectangularParticleSize = CGRect(x: 0, y: 0, width: 22, height: 8)
-    var squareParticleSize = CGRect(x: 0, y: 0, width: 10, height: 10)
-    var circularParticleSize = CGRect(x: 0, y: 0, width: 6, height: 6)
-    var starParticleSize = CGRect(x: 0, y: 0, width: 8, height: 8)
+    public var rectangularParticleSize = CGRect(x: 0, y: 0, width: 22, height: 8)
+    public var squareParticleSize = CGRect(x: 0, y: 0, width: 10, height: 10)
+    public var circularParticleSize = CGRect(x: 0, y: 0, width: 6, height: 6)
+    public var starParticleSize = CGRect(x: 0, y: 0, width: 8, height: 8)
     
-    override init() {
+    public override init() {
        super.init()
     }
     
-    required init(coder aDecoder: NSCoder) {
+    public required init(coder aDecoder: NSCoder) {
       fatalError("init(coder:) has not been implemented")
     }
     
-    func addToView(view: UIView) {
+    public func addToView(view: UIView) {
         emptyView = view
     }
     

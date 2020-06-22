@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ConfettiAnimation: CAEmitterLayer {
+public class ConfettiAnimation: CAEmitterLayer {
     
     // configurable public properties with default values
     var emptyView = UIView()

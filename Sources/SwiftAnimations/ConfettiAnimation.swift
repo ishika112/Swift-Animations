@@ -248,7 +248,7 @@ public class ConfettiAnimation: CAEmitterLayer {
         ], forKey: "emitterBehaviors")
     }
     
-    func blastConfetti() {
+    public func blastConfetti() {
         emptyView.layer.addSublayer(confettiLayer)
         addBehaviors()
         addAnimations()
